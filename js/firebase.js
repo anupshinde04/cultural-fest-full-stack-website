@@ -5,7 +5,7 @@ import { getAnalytics } from "firebase/analytics";
 
 // Firebase configuration (replace with your own)
 const firebaseConfig = {
-    apiKey: "AIzaSyDFi7vqhqN5cjgS_jtmsP96M_OEQcM33Oc",
+    apiKey: "",
     authDomain: "rhythm-ember.firebaseapp.com",
     projectId: "rhythm-ember",
     storageBucket: "rhythm-ember.appspot.com",
