@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Montserrat:wght@400;700;800&display=swap');
+body{
+    background: linear-gradient(#001d25 10%, #000 80%);
+    width: 95vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    width:fit-content;
+    height: fit-content;
+    padding: 20vh 2vw;
+    margin-left: 37vw;
+    margin-top: 20vh;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size:xx-large;
+    text-align: center;
+    
+}
+
+h3{
+    color: rgb(0, 32, 41);
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: x-large;
+    text-align: center;
+}
+
+button{
+    color: #fdfdfd;
+    background: #002227;
+    font-weight: 300;
+    font-size: x-large;
+    font-family: "Montserrat";
+    padding: 6px 25px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    transition: all .42s;
+    cursor: pointer;
+    margin-left: 6.5vw;
+}

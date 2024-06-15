@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--------------------------------------------------HEAD-------------------------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#005b4b" />
+            <link rel="icon" type="image/png" href="./images/favicon-removebg-preview (2).png">
+    <title>Rhythm Ember 2024</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
+</head>
+    <!-------------------------------------------------BODY---------------------------------------------------------------------->
+<body>
+    <!--------------------------------------PRELOADER---------------------------------------------->
+    <div id="loader">
+        <img src="./images/preloader.gif"
+                alt="student council" width="40%"/>
+    </div>
+    <div id="content">
+    <header>
+    <!--------------------------------------NAVBAR---------------------------------------------->
+        <nav>
+            <div class="navbar">
+                <h3 class="logo">student<span>council<span></h3>
+                <ul class="navlist">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./competitions.html" >COMPETITIONS</a></li>
+                    <li><a href="./events.html">EVENTS</a></li>
+                    <li><a href="./showflow.html">SHOWFLOW</a></li>
+                </ul>
+                <div class="btn-icon">
+                    <a class="btn" id="form-open">LOGIN</a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="scrollable" style="padding: 15px 15px 4500px;"></div>
+
+
+    <!--------------------------------------LOGIN---------------------------------------------->
+
+        <section class="home">
+            <div class="form_container">
+              <i class="uil uil-times form_close"></i>
+              <!-- Login From -->
+              <div class="form login_form">
+                <form action="#">
+                  <h2>Login</h2>
+                  <div class="input_box">
+                    <input type="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" placeholder="Enter your password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                  <div class="option_field">
+                    <span class="checkbox">
+                      <input type="checkbox" id="check" />
+                      <label for="check">Remember me</label>
+                    </span>
+                    <a href="#" class="forgot_pw">Forgot password?</a>
+                  </div>
+                  <button class="button" onclick="signIn()">Login Now</button>
+                  <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+                </form>
+              </div>
+              <!-- Signup From -->
+              <div class="form signup_form">
+                <form action="#">
+                  <h2>Signup</h2>
+                  <div class="input_box">
+                    <i class="bx bx-user"></i>
+                    <input type="name" placeholder="Enter your name" required />
+                  </div>
+                  <div class="input_box">
+                    <input type="email" class="email" placeholder="Enter your email" required />
+                    <i class="uil uil-envelope-alt email"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" class="password" placeholder="Create password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                  <div class="input_box">
+                    <input type="password" placeholder="Confirm password" required />
+                    <i class="uil uil-lock password"></i>
+                    <i class="uil uil-eye-slash pw_hide"></i>
+                  </div>
+                  <button class="button" onclick="signUp()">Signup Now</button>
+                  <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+                </form>
+              </div>
+            </div>
+          </section>
+    <!--------------------------------------MAIN SCREEN---------------------------------------------->
+
+        <img src="./images/mist.png" class="mist1 translate" data-speed="-4" alt="">
+        <img src="./images/mist.png" class="mist2 translate" data-speed="4" alt="">
+        <img src="./images/mist.png" class="mist3 translate" data-speed="-12" alt="">
+        <img src="./images/mist.png" class="mist4 translate" data-speed="12" alt="">
+        <img src="./images/bg.png" class="sky translate" data-speed="0" alt="">
+    </header>
+
+    <!--------------------------------------SECTION 1---------------------------------------------->
+
+    <section>
+        <div class="shadow"></div>
+
+        <div class="container">
+            <div class="content opacity">
+                <h3 class="title">
+                    THEME
+                    <div class="border"></div>
+                </h3>
+                <p1 class="text">Guess what's making a comeback? That's right - RHYTHM-EMBER is back and better than ever! The STUDENT COUNCIL'24 at Atharva Group of Institutes is hyped to announce our Annual Cultural Fest, RHYTHM EMBER'24 <br> Presenting you all the theme <br>🔮Hogwarts - Embrace the magic within you🔮</p1>
+            </div>
+
+            <div class="imgContainer opacity">
+                <img src="./images/hogwarts logo.png" alt="HOGWARTS: Embrace the magic within you">
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------SECTION 2---------------------------------------------->
+
+    <section>
+        <div class="shadow"></div>
+
+        <div class="container">
+            <div class="content opacity">
+                <h4 class="title">
+                    ABOUT US
+                    <div class="border"></div>
+                </h4>
+                <p2 class="text">Atharva Group of Institutes is a registered society, which was established in the year 1998 under the dynamic leadership of Hon. Shri Sunil Ji Rane Sir. The trust has the objective of imparting excellence in education to the frontiers of learning and education in Mumbai. AGI's Educational Complex is set up on a gigantic and spacious campus of 6 acres situated in the heart of western suburbs of Malad with convenient access by bus /train. AGI's Complex is the perfect setting of preofessional environment with a friendly touch to the scene.</p2>
+            </div>
+
+            <div class="imgContainer opacity">
+                <img src="./images/favicon-removebg-preview (2).png" alt="Atharva Group of Institutes">
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./js/script.js"></script>
+    </div>   
+
+    <!--------------------------------------SECTION 3------------------------------------------->
+
+<div class="FAQs">
+    <br>
+    <h2>Frequently Asked Questions</h2>
+
+<div class="accordian">
+    <div class="question">
+        <h4>What are the dates for Rhythm Ember 2024? </h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p><br>
+            The 26th edition of Rhythm Ember will be held from 14th to 18th April. Gear up for the 5 most awesome days of this year!</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>How do I register for Rhythm Ember?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p>
+            <br>Online registrations can be done through paytm insider links or through our official website.</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>Can I do offline registration for events?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p>
+            <br>Yes. You can register offline for the events by visiting out pop up in AGI's campus from 9AM to 5PM on week days.</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>What is the last date of registration?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p><br>Last date for registrations is 10th April.</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>Is the entry free?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p><br>The entry has been and will always be free for all college students with valid ID card of college or school.</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>What are the nearest railway and metro stations to reach Atharva College of Engineering?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p><br>
+            The AGI campus is located in Malad, around 3 km from the Malad Railway Station, around 4 km from Kandivali Railway Station and around 0.5 km from
+            Valnai(Mith Chowky) Metro Station.The Campus is well connected by road to each of these three major arrival points. As such, you can reach easily
+             by bus or readily hire a taxi or an auto-rickshaw from any of these to reach the Campus.</p>
+    </div>
+</div>
+
+<div class="accordian">
+    <div class="question">
+        <h4>What if I still have a query?</h4>
+        <i class="icon fa-solid fa-chevron-down"></i>
+    </div>
+    <div class="answer">
+        <p><br>Feel free contact our fellow coordinators anytime from 9AM to 9PM.<br><br>
+        Omkar Ayare:   (+91) 816963761 <br>
+        Om Padhi:      (+91) 797781045 <br>
+        Ashlesha More: (+91) 966407888
+    </p>
+    </div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<script src="./js/js.js">
+
+</script>
+
+</body>
+
+    <!--------------------------------------FOOTER---------------------------------------------->
+
+<footer id="footer" role="contentinfo">		<div class="container1">	
+    <a href="https://atharvacoe.ac.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Atharva College of Engineering</a>
+    <br>
+    <a href="https://atharvasb.edu.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Atharva School of Business</a> |
+    <a href="https://atharvaims.edu.in/" target="_blank" style="color:#ffffff; text-decoration: none;">Atharva Institute of Management Studies</a>	
+    <br>			
+    <span class="social-icons">									
+        <a href="https://www.facebook.com/Atharva-College-of-Engineering-Malad-W-Mumbai-792820690822433/?fref=ts" target="_blank">						
+            <i class="fa-brands fa-facebook"></i>					
+        </a>													
+        <a href="https://twitter.com/AtharvaEngg" target="_blank">						
+            <i class="fa-brands fa-twitter"></i>					
+        </a>													
+        <a href="https://www.linkedin.com/" target="_blank">						
+            <i class="fa-brands fa-linkedin"></i>					
+        </a>												
+        <a href="https://www.youtube.com/channel/UCQ_qG7Rt_bOKlFurPD8Kh_g" target="_blank">						
+            <i class="fa-brands fa-youtube"></i>					
+        </a>													
+        <a href="https://www.instagram.com/atharvacollege_of_engineering/" target="_blank">						
+            <i class="fa-brands fa-instagram"></i>					
+        </a>							
+    </span>			
+    <div class="footer-developedby">
+        <a href="https://maps.app.goo.gl/koxDLpaccYsq7vJg9" rel="nofollow" target="_blank">GOOGLE MAP</a>
+         | <a href="https://www.atharvacoe.ac.in/contact-us-2/" rel="nofollow" target="_blank">CONTACT US</a>
+          | <a href="https://www.atharvacoe.ac.in/careers/" rel="nofollow" target="_blank">CAREERS</a>
+        </div>		
+    </div>	
+</footer>
+
+</html>

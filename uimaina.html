@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--------------------------------------------------HEAD-------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#005b4b" />
+    <link rel="icon" type="image/png" href="./images/favicon-removebg-preview (2).png">
+    <title>Rhythm Ember 2024</title>
+    <link rel="stylesheet" href="./css/footsnooker.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <script src="https://kit.fontawesome.com/c1fc3d2826.js" crossorigin="anonymous"></script>
+</head>
+<!-------------------------------------------------BODY---------------------------------------------------------------------->
+
+<body>
+
+    <!--------------------------------------NAVBAR---------------------------------------------->
+    <nav>
+        <div class="navbar">
+            <h3 class="logo">student<span>council<span></h3>
+            <ul class="navlist">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./competitions.html" >COMPETITIONS</a></li>
+                <li><a href="./events.html">EVENTS</a></li>
+                <li><a href="./showflow.html">SHOWFLOW</a></li>
+            </ul>
+            <div class="btn-icon">
+                <a class="btn" id="form-open">LOGIN</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------------------------MAIN SCREEN---------------------------------------------->
+    <section>
+
+        <h2 class="title" style="font-size: 30px;">ui maina</h2>
+        
+        <div class="container">
+            <div class="img-container">
+                <div class="image">
+                    <img src="./images/ui mania.jpg" alt="ui mania">
+                </div>
+                <h3 class="prize money"> REG. FEES: INR 60 <br> PRIZES WORTH: INR 1,000</h3>
+            </div>
+
+            <div class="content">
+                    <div class="tab_box">
+                        <button class="tab_btn" disabled style="cursor: default;"></button>
+                        <button class="tab_btn active"> ABOUT </button>
+                        <button class="tab_btn"> RULES </button>
+                        <button class="tab_btn"> TIMELINE </button>
+                        <button class="tab_btn"> CONTACT </button>
+                        <button class="tab_btn" disabled style="cursor: default;"></button>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="content_box">
+                        <div class="content active">
+                            <h2>ABOUT</h2>
+                            <p>
+                                Topic will be given to the participants where they have to
+                                create the most attractive and interactive UI in a certain time
+                                limit.
+                            </p>
+                            <br>
+                            <a href="./payment.html" class="btn">REGISTER</a>
+                    </div>
+
+                        <div class="content">
+                            <h2>RULES</h2>
+                            <p>
+                                1. A contestant has to participate individually.<br>
+                                2. UI should be original, innovative and creativity .<br>
+                                3. There will be a question and answer round on the basis of the UI which you have created. For example
+                                why you had created this UI why not something else?<br>
+                                4. Contestant with the most attractive and interactive UI wins the UI Mania.<br>
+                                5. No use slang language.<br>
+                                6. No gambling allowed, if anyone is found doing so, they will be disqualified immediately.<br>
+                                7. Event head's decision will be final decision.<br>
+                                8. No arguing with the event head.
+                            </p>
+                            <br>
+                            <a href="./payment.html" class="btn">REGISTER</a>
+                    </div>
+
+                        <div class="content">
+                            <h2>TIMELINE</h2>
+                             <p>
+                                Last Date of Registration:<br>30th March
+                                2023<br>
+                                Event: On 3rd April 2023 at 05:00 PM<br>
+                                REsult declaration: On 6th April 2023 at 3:00 PM
+                            </p>
+                            <br>
+                            <a href="./payment.html" class="btn">REGISTER</a>
+                        </div>
+
+                        <div class="content">
+                            <h2>CONTACT</h2>
+                             <p>
+                                Omkar Ayare:   (+91) 816963761 <br>
+        Om Padhi:      (+91) 797781045 <br>
+        Ashlesha More: (+91) 966407888
+                            </p>
+                            <br>
+                            <a href="./payment.html" class="btn">REGISTER</a>
+                        </div>
+
+                    </div>    
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    </section>
+    <script>
+       const tabs= document.querySelectorAll('.tab_btn');
+        const all_content= document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index)=>{
+            tab.addEventListener('click', (e) => {
+                tabs.forEach(tab=>{tab.classList.remove('active')});
+                tab.classList.add('active');
+
+                var line=document.querySelector('.line');
+                line.style.width =e.target.offsetWidth + "px";
+                line.style.left = e.target.offsetLeft + "px";
+
+                all_content.forEach(content=>{content.classList.remove('active')});
+                all_content[index].classList.add('active');
+
+            });
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    </div>
+</body>
+<!--------------------------------------FOOTER---------------------------------------------->
+
+<footer id="footer" role="contentinfo">		<div class="container1">	
+    <a href="https://atharvacoe.ac.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Atharva College of Engineering</a>
+    <br>
+    <a href="https://atharvasb.edu.in/" target="_blank" style="color: #ffffff; text-decoration: none;">Atharva School of Business</a> |
+    <a href="https://atharvaims.edu.in/" target="_blank" style="color:#ffffff; text-decoration: none;">Atharva Institute of Management Studies</a>	
+    <br>			
+    <span class="social-icons">									
+        <a href="https://www.facebook.com/Atharva-College-of-Engineering-Malad-W-Mumbai-792820690822433/?fref=ts" target="_blank">						
+            <i class="fa-brands fa-facebook"></i>					
+        </a>													
+        <a href="https://twitter.com/AtharvaEngg" target="_blank">						
+            <i class="fa-brands fa-twitter"></i>					
+        </a>													
+        <a href="https://www.linkedin.com/" target="_blank">						
+            <i class="fa-brands fa-linkedin"></i>					
+        </a>												
+        <a href="https://www.youtube.com/channel/UCQ_qG7Rt_bOKlFurPD8Kh_g" target="_blank">						
+            <i class="fa-brands fa-youtube"></i>					
+        </a>													
+        <a href="https://www.instagram.com/atharvacollege_of_engineering/" target="_blank">						
+            <i class="fa-brands fa-instagram"></i>					
+        </a>							
+    </span>			
+    <div class="footer-developedby">
+        <a href="https://maps.app.goo.gl/koxDLpaccYsq7vJg9" rel="nofollow" target="_blank">GOOGLE MAP</a>
+         | <a href="https://www.atharvacoe.ac.in/contact-us-2/" rel="nofollow" target="_blank">CONTACT US</a>
+          | <a href="https://www.atharvacoe.ac.in/careers/" rel="nofollow" target="_blank">CAREERS</a>
+        </div>		
+    </div>	
+</footer>
+</html>
